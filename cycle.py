@@ -1,4 +1,5 @@
 import os
+from typing import Union
 import uuid
 
 import qrcode
@@ -21,13 +22,18 @@ def generate_new_codes():
             image_factory=qrcode.image.svg.SvgImage,
         ).save(f"{CODES_DIR}/{i:02d}.svg")
 
-def cycle_and_export(page_num: int):
+def cycle_and_export(page_num: Union[int, None] = None):
     # Cycle codes
     delete_codes()
     generate_new_codes()
     
     # Export to pdf
-    os.system(f"soffice --headless --convert-to pdf --outdir output/ template.fodt > /dev/null")    
+    if page_num is not None:
+        os.system(f"soffice --headless --convert-to pdf --outdir output/{page_num} template.fodt > /dev/null")
+        os.rename(f"output/{page_num}/template.pdf", f"output/page_{page_num}.pdf")
+    else:
+        os.system("soffice --headless --convert-to pdf --outdir output template.fodt > /dev/null")
+        os.rename("output/template.pdf", f"output/page.pdf")
  
 def do_again():
     while True:
@@ -53,7 +59,7 @@ if __name__ == "__main__":
         print(f"Generating page {num_pages}... ", end="", flush=True) 
         cycle_and_export(num_pages)
         print("DONE")
-        print("Page exported to output/template.pdf\n")
+        print("Page exported to output/page_{num_pages}.pdf")
     
     print(f"Generated a total of {num_pages} pages of QR codes.")
     
