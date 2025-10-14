@@ -1,19 +1,21 @@
 /*
  * ATtiny414 LED Matrix - SIMPLE DEBUG VERSION
- *
+ * 
+ * 
  * First authored by Robert Conde on October 13th, 2025
  *  for SwampHack XI. Made with ❤️!
+ *
+ * First checkerboard on October 14th w/ Jason from Toronto.
  * 
  * Pin Assignment:
  * - PA1: ~S_R  (Row data - active low)
  * - PA2: CLK_R (Row clock)
- * - PA3: S_C  (Column data)
+ * - PA3: S_C   (Column data)
  * - PA4: CLK_C (Column clock)
- * - PA5: ~OE  (Output Enable - active LOW)
+ * - PA5: ~OE   (Output Enable - active LOW)
  * 
  */
 
-// F_CPU is defined by Arduino IDE
 #include <avr/io.h>
 #include <util/delay.h>
 
@@ -48,30 +50,28 @@ void shift_bit(uint8_t bit, uint8_t data_pin, uint8_t clock_pin) {
         PORTA.OUTCLR = data_pin;
     }
     
-    _delay_us(5);  // Slow for debugging
+    _delay_us(1);  // Slow for debugging
     
     // Clock HIGH
     PORTA.OUTSET = clock_pin;
-    _delay_us(5);
+    _delay_us(1);
     
     // Clock LOW
     PORTA.OUTCLR = clock_pin;
-    _delay_us(5);
+    _delay_us(1);
 }
 
 void reset_registers(void) {
     // Deselect all rows
-    for (uint8_t i = 0; i < ROWS; i++) {
+    for (uint8_t i = 0; i < ROWS + 1; i++) {
         shift_bit(1, S_R_PIN, CLK_R_PIN);
     }
 
     // Deselect all columns
-    for (uint8_t i = 0; i < COLS; i++) {
+    for (uint8_t i = 0; i < COLS + 1; i++) {
         shift_bit(0, S_C_PIN, CLK_C_PIN);
     }
 }
-
-
 
 void display_next_row(void) {
     /* Hide */
@@ -80,21 +80,23 @@ void display_next_row(void) {
 
     /* Select the row*/
     // Shift (perhaps in) the row select bit
-    shift_bit(++row_select < ROWS ? 1 : 0, S_R_PIN, CLK_R_PIN);
+    uint8_t loopback = ++row_select >= ROWS;
+    shift_bit(!loopback, S_R_PIN, CLK_R_PIN);
+    if (loopback) {
+        shift_bit(1, S_R_PIN, CLK_R_PIN);
+        row_select %= ROWS; // fix 'da counter
+    }
 
     /* Assemble the row */
     for (uint8_t i = 0; i < COLS; i++)
         shift_bit((i + row_select) % 2, S_C_PIN, CLK_C_PIN);
-    shift_bit(0, S_C_PIN, CLK_C_PIN);
+    shift_bit(0, S_C_PIN, CLK_C_PIN); // extra shift since we tied clocks together!
 
     /* Flash Row */
     // Enable output
     PORTA.OUTCLR = OE_PIN;
     // Wait some time...
-    _delay_ms(10);
-
-    // Buffer time between rows
-    _delay_us(5);
+    _delay_us(25); // plenty sufficient
 }
 
 int main(void) {
@@ -102,6 +104,7 @@ int main(void) {
 
     reset_registers();
 
+    shift_bit(0, S_R_PIN, CLK_R_PIN);
     while (true) {
         display_next_row();
     }
