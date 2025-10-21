@@ -1,0 +1,52 @@
+# KiCad .gitignore for badge_led_matrix project
+
+# User-specific settings (window positions, zoom, recently used files, etc.)
+# These are personal preferences that differ between users/machines
+*.kicad_prl
+
+# Auto-generated backup files
+# KiCad creates automatic backups - version control makes these redundant
+*-backups/
+*.bak
+*.bck
+
+# Cached footprint library information
+# This is regenerated automatically when you open the project
+fp-info-cache
+
+# Manufacturing output directories
+# These can be regenerated from source files as needed
+jlcpcb/
+gerbers/
+fabrication/
+*-gerbers/
+
+# Individual Gerber files (optional - uncomment if you don't want to version these)
+# Some teams prefer to commit production files for easy access to "known good" versions
+# Others prefer to regenerate them to ensure they match current design
+*.gbr
+*.gbrjob
+*.drl
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~
+*.swp
+*.swo
+
+# 3D cache files (if generated)
+*.3dshapes/
+*-3dshapes/
+
+# Symbol and footprint cache libraries (project-specific cache)
+*-cache.lib
+*-cache.dcm
+sym-lib-table.backup
+fp-lib-table.backup
