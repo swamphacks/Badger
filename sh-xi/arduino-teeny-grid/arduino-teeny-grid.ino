@@ -1,11 +1,13 @@
 /*
- * ATtiny414 LED Matrix - SIMPLE DEBUG VERSION
+ * ATtiny414 LED Matrix - Graphic display.
  * 
- * 
- * First authored by Robert Conde on October 13th, 2025
- *  for SwampHack XI. Made with ❤️!
- *
- * First checkerboard on October 14th w/ Jason from Toronto.
+ * Revision History:
+ *  Oct-13  First authored by Robert Conde for SwampHack XI.
+ *           Made with ❤️!
+ *  Oct-14  First checkerboard on October 14th w/ Jason from
+ *           Toronto.
+ *  Oct-21  First graphic on October 21st (thinking of Jason
+ *           from Toronto).
  * 
  * Pin Assignment:
  * - PA1: ~S_R  (Row data - active low)
@@ -18,6 +20,7 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
+#include <avr/pgmspace.h>
 
 // Pin definitions
 #define S_R_PIN     PIN1_bm    // PA1 - Row data
@@ -28,6 +31,27 @@
 
 #define ROWS 16
 #define COLS 32
+
+// Graphic pattern
+// Each row is 4 bytes (32 bits), stored in program memory
+const uint8_t graphic[ROWS][4] PROGMEM = {
+    {0b00000000, 0b00000000, 0b00000000, 0b00000000}, // Row 00
+    {0b01000001, 0b00000000, 0b00001001, 0b00111110}, // Row 01
+    {0b01000001, 0b00000000, 0b00001001, 0b00111110}, // Row 02
+    {0b01000001, 0b00001001, 0b00001001, 0b00111110}, // Row 03
+    {0b01000001, 0b00000000, 0b00001001, 0b00011100}, // Row 04
+    {0b01000001, 0b00000000, 0b00001001, 0b00011100}, // Row 05
+    {0b01000001, 0b00001111, 0b00001001, 0b00011100}, // Row 06
+    {0b01111111, 0b00010000, 0b10001001, 0b00001000}, // Row 07
+    {0b01000001, 0b00100000, 0b01001001, 0b00001000}, // Row 08
+    {0b01000001, 0b00100000, 0b01001001, 0b00000000}, // Row 09
+    {0b01000001, 0b00111111, 0b10001001, 0b00011100}, // Row 10
+    {0b01000001, 0b00100000, 0b00001001, 0b00101010}, // Row 11
+    {0b01000001, 0b00100000, 0b00001001, 0b00110110}, // Row 12
+    {0b01000001, 0b00010000, 0b00001001, 0b00101010}, // Row 13
+    {0b01000001, 0b00001111, 0b10000100, 0b10011100}, // Row 14
+    {0b00000000, 0b00000000, 0b00000000, 0b00000000}, // Row 15
+};
 
 // Current bit position (0-31)
 uint8_t row_select = ROWS;
@@ -50,7 +74,7 @@ void shift_bit(uint8_t bit, uint8_t data_pin, uint8_t clock_pin) {
         PORTA.OUTCLR = data_pin;
     }
     
-    _delay_us(1);  // Slow for debugging
+    _delay_us(1);
     
     // Clock HIGH
     PORTA.OUTSET = clock_pin;
@@ -73,6 +97,11 @@ void reset_registers(void) {
     }
 }
 
+// Get pixel value from heart pattern
+// Current byte and bit position for shifting
+uint8_t current_byte;
+uint8_t current_bit_mask;
+
 void display_next_row(void) {
     /* Hide */
     // Disable output
@@ -88,15 +117,35 @@ void display_next_row(void) {
     }
 
     /* Assemble the row */
-    for (uint8_t i = 0; i < COLS; i++)
-        shift_bit((i + row_select) % 2, S_C_PIN, CLK_C_PIN);
+    // Load last byte and initialize bit mask (shift in reverse order)
+    uint8_t byte_idx = 3;
+    current_byte = pgm_read_byte(&graphic[row_select][byte_idx]);
+    current_bit_mask = 0x01; // Start with LSB
+
+    for (uint8_t i = 0; i < COLS; i++) {
+        // Shift out current bit
+        shift_bit(current_byte & current_bit_mask, S_C_PIN, CLK_C_PIN);
+        
+        // Move to next bit
+        current_bit_mask <<= 1;
+        
+        // If we've exhausted this byte, load the previous one
+        if (current_bit_mask == 0) {
+            if (byte_idx > 0) {
+                byte_idx--;
+                current_byte = pgm_read_byte(&graphic[row_select][byte_idx]);
+            }
+            current_bit_mask = 0x01; // Reset to LSB
+        }
+    }
+    
     shift_bit(0, S_C_PIN, CLK_C_PIN); // extra shift since we tied clocks together!
 
     /* Flash Row */
     // Enable output
     PORTA.OUTCLR = OE_PIN;
     // Wait some time...
-    _delay_us(25); // plenty sufficient
+    _delay_us(25); // Plenty of time
 }
 
 int main(void) {
@@ -104,7 +153,7 @@ int main(void) {
 
     reset_registers();
 
-    shift_bit(0, S_R_PIN, CLK_R_PIN);
+    shift_bit(0, S_R_PIN, CLK_R_PIN); // TODO: consider if needed
     while (true) {
         display_next_row();
     }
