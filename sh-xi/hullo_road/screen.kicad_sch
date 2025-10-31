@@ -8817,16 +8817,6 @@
 		)
 		(uuid "1b825f6b-b98d-45e8-844d-a1f6cfa2849b")
 	)
-	(bus
-		(pts
-			(xy 38.1 222.25) (xy 38.1 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bd65521-e27b-4908-9680-7a622948ee1b")
-	)
 	(wire
 		(pts
 			(xy 347.98 176.53) (xy 344.17 176.53)

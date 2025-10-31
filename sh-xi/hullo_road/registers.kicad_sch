@@ -3284,7 +3284,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2fa83600-b1ed-48dd-a71a-69cf8c6d7c78")
+		(uuid "2fa83600-b1ed-48dd-a71a-69cf8c6d7c79")
 	)
 	(label "Row0"
 		(at 78.74 34.29 180)
@@ -3294,7 +3294,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2fa83600-b1ed-48dd-a71a-69cf8c6d7c78")
+		(uuid "2fa83600-b1ed-48dd-a71a-69cf8c6d7c7a")
 	)
 	(label "Row1"
 		(at 78.74 36.83 180)
@@ -3304,7 +3304,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2fa83600-b1ed-48dd-a71a-69cf8c6d7c78")
+		(uuid "2fa83600-b1ed-48dd-a71a-69cf8c6d7c7b")
 	)
 	(label "CS_CP"
 		(at 116.84 39.37 0)
@@ -3354,7 +3354,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6175412e-2086-4111-a7e7-b8aa48a4a40f")
+		(uuid "6175412e-2086-4111-a7e7-b8aa48a4a410")
 	)
 	(label "Row6"
 		(at 73.66 49.53 0)
@@ -3364,7 +3364,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6175412e-2086-4111-a7e7-b8aa48a4a40f")
+		(uuid "6175412e-2086-4111-a7e7-b8aa48a4a411")
 	)
 	(label "Row7"
 		(at 73.66 52.07 0)
@@ -3374,7 +3374,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6175412e-2086-4111-a7e7-b8aa48a4a40f")
+		(uuid "6175412e-2086-4111-a7e7-b8aa48a4a412")
 	)
 	(label "Col3"
 		(at 156.21 41.91 0)
@@ -3394,7 +3394,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8817")
 	)
 	(label "Col4"
 		(at 156.21 44.45 0)
@@ -3404,7 +3404,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8818")
 	)
 	(label "Col5"
 		(at 156.21 46.99 0)
@@ -3414,7 +3414,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8819")
 	)
 	(label "Col7"
 		(at 156.21 52.07 0)
@@ -3424,7 +3424,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df881a")
 	)
 	(label "Col6"
 		(at 156.21 49.53 0)
@@ -3434,7 +3434,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df881b")
 	)
 	(label "Col0"
 		(at 156.21 34.29 0)
@@ -3444,7 +3444,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df881c")
 	)
 	(label "Col1"
 		(at 156.21 36.83 0)
@@ -3454,7 +3454,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df881d")
 	)
 	(label "Col26"
 		(at 156.21 172.72 0)
@@ -3464,7 +3464,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df881e")
 	)
 	(label "Col27"
 		(at 156.21 175.26 0)
@@ -3474,7 +3474,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df881f")
 	)
 	(label "Col28"
 		(at 156.21 177.8 0)
@@ -3484,7 +3484,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8820")
 	)
 	(label "Col29"
 		(at 156.21 180.34 0)
@@ -3494,7 +3494,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8821")
 	)
 	(label "Col30"
 		(at 156.21 182.88 0)
@@ -3504,7 +3504,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8822")
 	)
 	(label "Col31"
 		(at 156.21 185.42 0)
@@ -3514,7 +3514,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8823")
 	)
 	(label "Col8"
 		(at 156.21 78.74 0)
@@ -3524,7 +3524,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8824")
 	)
 	(label "Col9"
 		(at 156.21 81.28 0)
@@ -3534,7 +3534,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8825")
 	)
 	(label "Col10"
 		(at 156.21 83.82 0)
@@ -3544,7 +3544,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8826")
 	)
 	(label "Col11"
 		(at 156.21 86.36 0)
@@ -3554,7 +3554,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8827")
 	)
 	(label "Col12"
 		(at 156.21 88.9 0)
@@ -3564,7 +3564,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8828")
 	)
 	(label "Col13"
 		(at 156.21 91.44 0)
@@ -3574,7 +3574,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8829")
 	)
 	(label "Col14"
 		(at 156.21 93.98 0)
@@ -3584,7 +3584,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df882a")
 	)
 	(label "Col15"
 		(at 156.21 96.52 0)
@@ -3594,7 +3594,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df882b")
 	)
 	(label "Col17"
 		(at 156.21 125.73 0)
@@ -3604,7 +3604,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df882c")
 	)
 	(label "Col18"
 		(at 156.21 128.27 0)
@@ -3614,7 +3614,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df882d")
 	)
 	(label "Col21"
 		(at 156.21 135.89 0)
@@ -3624,7 +3624,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df882e")
 	)
 	(label "Col25"
 		(at 156.21 170.18 0)
@@ -3634,7 +3634,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df882f")
 	)
 	(label "Col24"
 		(at 156.21 167.64 0)
@@ -3644,7 +3644,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8830")
 	)
 	(label "Col22"
 		(at 156.21 138.43 0)
@@ -3654,7 +3654,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8831")
 	)
 	(label "Col23"
 		(at 156.21 140.97 0)
@@ -3664,7 +3664,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8832")
 	)
 	(label "Col19"
 		(at 156.21 130.81 0)
@@ -3674,7 +3674,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8833")
 	)
 	(label "Col20"
 		(at 156.21 133.35 0)
@@ -3684,7 +3684,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8834")
 	)
 	(label "Col16"
 		(at 156.21 123.19 0)
@@ -3694,7 +3694,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8816")
+		(uuid "62705d5a-d5aa-44cb-a320-ba14d2df8835")
 	)
 	(label "~OE"
 		(at 116.84 138.43 0)
@@ -3734,7 +3734,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51e")
 	)
 	(label "Row13"
 		(at 73.66 91.44 0)
@@ -3744,7 +3744,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51f")
 	)
 	(label "Row12"
 		(at 73.66 88.9 0)
@@ -3754,7 +3754,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f520")
 	)
 	(label "Row15"
 		(at 73.66 96.52 0)
@@ -3764,7 +3764,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f521")
 	)
 	(label "Row14"
 		(at 73.66 93.98 0)
@@ -3774,7 +3774,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f522")
 	)
 	(label "Row9"
 		(at 73.66 81.28 0)
@@ -3784,7 +3784,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f523")
 	)
 	(label "Row8"
 		(at 73.66 78.74 0)
@@ -3794,7 +3794,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f51d")
+		(uuid "735d1e88-1e4c-42c2-ba29-14ab1d86f524")
 	)
 	(label "~OE"
 		(at 116.84 49.53 0)
@@ -3990,7 +3990,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 85.598 90)
 			(effects
 				(font
@@ -4125,7 +4125,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 90.678 90)
 			(effects
 				(font
@@ -4193,7 +4193,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 53.848 90)
 			(effects
 				(font
@@ -4261,7 +4261,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 43.688 90)
 			(effects
 				(font
@@ -4595,7 +4595,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 98.298 90)
 			(effects
 				(font
@@ -4729,7 +4729,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 88.138 90)
 			(effects
 				(font
@@ -4864,7 +4864,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 38.608 90)
 			(effects
 				(font
@@ -4932,7 +4932,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 41.148 90)
 			(effects
 				(font
@@ -5000,7 +5000,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 48.768 90)
 			(effects
 				(font
@@ -5359,7 +5359,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 80.518 90)
 			(effects
 				(font
@@ -5427,7 +5427,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 51.308 90)
 			(effects
 				(font
@@ -5561,7 +5561,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 46.228 90)
 			(effects
 				(font
@@ -5629,7 +5629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 95.758 90)
 			(effects
 				(font
@@ -5764,7 +5764,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 93.218 90)
 			(effects
 				(font
@@ -5898,7 +5898,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 36.068 90)
 			(effects
 				(font
@@ -6458,7 +6458,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 66.04 83.058 90)
 			(effects
 				(font
