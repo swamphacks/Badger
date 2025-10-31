@@ -34216,13 +34216,14 @@
 		)
 	)
 	(gr_rect
-		(start 59.5 86)
-		(end 129.5 129.5)
+		(start 31 69.65)
+		(end 158 145.85)
 		(stroke
 			(width 0.2)
-			(type default)
+			(type solid)
 		)
 		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "9ed6e1d6-9535-4ba1-8662-3251d86d9732")
 	)
