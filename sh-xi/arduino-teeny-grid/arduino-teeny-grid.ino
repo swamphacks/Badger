@@ -10,7 +10,7 @@
  *           from Toronto).
  * 
  * Pin Assignment:
- * - PA1: ~S_R  (Row data - active low)
+ * - PA1: S_R   (Row data)
  * - PA2: CLK_R (Row clock)
  * - PA3: S_C   (Column data)
  * - PA4: CLK_C (Column clock)

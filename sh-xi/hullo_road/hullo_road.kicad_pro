@@ -617,6 +617,14 @@
     [
       "c0ba7f12-d859-4bdc-b0d3-94c6abdb090b",
       "LED Matrix"
+    ],
+    [
+      "ffad9369-2b43-4bf3-8842-3ed074660298",
+      "Control"
+    ],
+    [
+      "3c66a474-837f-4240-b16c-c559f08e8d5c",
+      "Registers"
     ]
   ],
   "text_variables": {}
