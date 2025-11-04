@@ -50,3 +50,8 @@ Thumbs.db
 *-cache.dcm
 sym-lib-table.backup
 fp-lib-table.backup
+
+
+# Extensions
+gerber_to_order/
+place_footprints.*

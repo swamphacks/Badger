@@ -11,6 +11,21 @@
 		(comment 1 "For SwampHacks,")
 	)
 	(lib_symbols)
+	(bus_alias "Control.Cols"
+		(members "CCol[0..31]")
+	)
+	(bus_alias "Control.RegisterControlLines"
+		(members "RS_S" "RS_CP" "CS_S" "CS_CP" "~OE")
+	)
+	(bus_alias "Control.Rows"
+		(members "CRow[0..15]")
+	)
+	(bus_alias "Matrix.Cols"
+		(members "Col[0..31]")
+	)
+	(bus_alias "Matrix.Rows"
+		(members "Row[0..15]")
+	)
 	(sheet
 		(at 38.1 38.1)
 		(size 25.4 25.4)
@@ -90,7 +105,7 @@
 		(instances
 			(project "hullo_road"
 				(path "/be742489-42fa-4524-ab86-4a70063d0740"
-					(page "3")
+					(page "4")
 				)
 			)
 		)
